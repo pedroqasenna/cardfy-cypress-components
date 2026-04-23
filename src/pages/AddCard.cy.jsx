@@ -170,6 +170,11 @@ describe('<AddCard />', () => {
     cy.contains('button', 'Adicionar Cartão').click()
 
     cy.contains('Cartão cadastrado com sucesso!').should('be.visible')
+
+
+    it('FORÇA ERRO NO PIPELINE', () => {
+  expect(true).to.eq(false)
+})
   })
 
 })
