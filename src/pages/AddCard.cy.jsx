@@ -169,7 +169,7 @@ describe('<AddCard />', () => {
     cy.contains('button', 'Nubank').click()
     cy.contains('button', 'Adicionar Cartão').click()
 
-    cy.contains('Cartão cadastrado com suceçu').should('be.visible')
+    cy.contains('Cartão cadastrado com sucessssooooo').should('be.visible')
   })
 
 })
