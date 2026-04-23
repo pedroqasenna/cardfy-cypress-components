@@ -20,19 +20,22 @@ jobs:
           node-version: 22
 
       - name: Instalar dependências
-        run: npm install
+        run: npm ci
+
+      - name: Verificar Cypress
+        run: npx cypress verify
 
       - name: Rodar testes de componente Cypress
         run: npx cypress run --component
 
-      - name: Upload de screenshots (somente em caso de falha)
+      - name: Upload screenshots (somente falha)
         if: failure()
         uses: actions/upload-artifact@v4
         with:
           name: cypress-screenshots
           path: cypress/screenshots
 
-      - name: Upload de vídeos (somente em caso de falha)
+      - name: Upload videos (somente falha)
         if: failure()
         uses: actions/upload-artifact@v4
         with:
