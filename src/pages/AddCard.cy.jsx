@@ -1,6 +1,6 @@
 import React from 'react'
-import AddCard from './AddCard'
-import { cardService } from '../services/cardService'
+import AddCard from '../../src/pages/AddCard'
+import { cardService } from '../../src/services/cardService'
 
 Cypress.Commands.add('alertErrorHavetext', (expectedText) => {
   cy.contains('.alert-error', expectedText)
@@ -170,10 +170,6 @@ describe('<AddCard />', () => {
     cy.contains('button', 'Adicionar Cartão').click()
 
     cy.contains('Cartão cadastrado com sucesso!').should('be.visible')
-
-    it('FORÇA ERRO NO PIPELINEI', () => {
-  expect(true).to.eq(false)
-})
   })
 
 })
