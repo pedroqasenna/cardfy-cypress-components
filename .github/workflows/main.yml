@@ -1,0 +1,40 @@
+name: Cypress Component Tests
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+
+jobs:
+  cypress-component:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Instalar dependências
+        run: npm install
+
+      - name: Rodar testes de componente Cypress
+        run: npx cypress run --component
+
+      - name: Upload de screenshots (somente em caso de falha)
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cypress-screenshots
+          path: cypress/screenshots
+
+      - name: Upload de vídeos (somente em caso de falha)
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cypress-videos
+          path: cypress/videos
