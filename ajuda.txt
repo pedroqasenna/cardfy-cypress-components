@@ -1,0 +1,10 @@
+COMANDOS PARA VALIDAR O TEXTO DE MENSAGEM DE ERRO
+
+COM CONTAINS:
+
+cy.contains('.alert-error', "Número do cartão é obrigatório")
+.should('be.visible')
+
+O HTML DEVE CONTER ALERT-ERROR
+ {errors.holderName && (
+                  <p className="alert-error mt-1 text-xs text-red-400 ml-2">{errors.holderName}</p>
