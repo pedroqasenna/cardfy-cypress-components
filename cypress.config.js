@@ -7,6 +7,9 @@ export default defineConfig({
       bundler: "vite",
     },
   },
+  component: {
+  supportFile: "cypress/support/component.js",
+},
 
   component: {
     devServer: {
