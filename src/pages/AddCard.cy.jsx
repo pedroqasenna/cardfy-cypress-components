@@ -169,7 +169,7 @@ describe('<AddCard />', () => {
     cy.contains('button', 'Nubank').click()
     cy.contains('button', 'Adicionar Cartão').click()
 
-    cy.contains('xxxxx').should('be.visible')
+    cy.contains('yyyyyyyy').should('be.visible')
   })
 
 })
