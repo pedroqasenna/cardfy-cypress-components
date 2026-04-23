@@ -171,8 +171,7 @@ describe('<AddCard />', () => {
 
     cy.contains('Cartão cadastrado com sucesso!').should('be.visible')
 
-
-    it('FORÇA ERRO NO PIPELINE', () => {
+    it('FORÇA ERRO NO PIPELINEI', () => {
   expect(true).to.eq(false)
 })
   })
