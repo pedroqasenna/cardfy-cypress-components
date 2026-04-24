@@ -1,0 +1,7 @@
+comit no git
+
+Altera arquivo.
+git status
+git add src/pages/AddCard.cy.jsx
+git commit -m "ALTERA O NOME"
+git push origin main
