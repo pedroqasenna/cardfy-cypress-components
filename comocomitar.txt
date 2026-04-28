@@ -1,3 +1,10 @@
+abrir cypress
+
+npx cypress open
+
+
+
+
 comit no git
 
 Altera arquivo.
@@ -5,3 +12,74 @@ git status
 git add src/pages/AddCard.cy.jsx
 git commit -m "ALTERA O NOME"
 git push origin main
+
+
+POS-
+REPOSTA 1:
+Prática 1 selecionada: Documentação adequada
+Justificativa:
+No cenário do projeto AP, escolhi essa prática porque o sistema atual sofre com falta de documentação, o que dificulta manutenção e evolução.
+A aplicação deve começar organizando o que já existe, documentando regras de negócio, fluxos e funcionalidades. 
+A documentação precisa ser atualizada ao longo do projeto, garantindo mais organização, facilidade de manutenção e alinhamento do time um exemplo de ferramenta que pode ser utilizada é o Confluence onde todo o time pode ter acesso a documentação.
+
+Prática 2 selecionada: Controle de versão
+Justificativa:
+No cenário do projeto AP, escolhi o controle de versão para garantir rastreabilidade, organização e segurança nas mudanças do sistema.
+Ele será usado desde o início do desenvolvimento, registrando todas as alterações no código. 
+Isso ajuda na refatoração e reaproveitamento do sistema atual, reduz erros e facilita correções. Além disso, cada versão entregue fica registrada, ajudando na gestão e no acompanhamento da evolução do sistema.
+
+Prática 3 selecionada: Testes automatizados
+Justificativa:
+No cenário do projeto AP, escolhi testes automatizados para garantir qualidade contínua a cada entrega.
+Eles devem ser aplicados principalmente nas funcionalidades críticas para o sistema com foco em testes de regressão. 
+Integrados ao versionamento (Git), os testes rodam a cada alteração no código, identificando erros rapidamente reduzindo o tempo de correção, aumentando a confiabilidade e melhora a estabilidade do sistema.
+
+Prática 4 selecionada: Experiência do usuário
+Justificativa:
+No cenário do projeto AP, escolhi experiência do usuário porque o sistema atual tem problemas de usabilidade e baixa satisfação dos usuários.
+A aplicação envolve aproximar o time dos usuários para entender suas necessidades e dificuldades; Com isso, é possível melhorar fluxos, interface e relatórios, deixando o sistema mais simples, fluido e assertivo aumentando a eficiência no uso e melhora a aceitação das entregas.
+
+
+Seguindo o modelo em V onde cada etapa tem um tipo de teste diferente,
+Segue a estrutura que elaborei.
+
+Passo 1: Levantamento de requisitos
+No cenário do projeto AP, esse passo é essencial para entender as necessidades dos usuários e corrigir um dos principais problemas do sistema atual, que foi desenvolvido sem participação das partes interessadas.
+Devem ser feitas reuniões com áreas como financeiro, administrativo e usuários finais para levantar requisitos, entender fluxos e já identificar melhorias. 
+Aqui também já se inicia o pensamento de validação futura (testes de aceitação).
+
+Passo 2: Análise e documentação dos requisitos
+No cenário do projeto AP, todas as informações levantadas devem ser documentadas com detalhes, incluindo regras de negócio, fluxos e funcionalidades.
+Essa documentação será a base para o desenvolvimento e também para os testes, garantindo alinhamento entre time e cliente e evitando retrabalho.
+
+Passo 3: Design do sistema
+Aqui é onde será definido como o sistema será construído, arquitetura, tecnologias e estrutura.
+No cenário do projeto AP, isso é importante para sair de uma plataforma proprietária e garantir um sistema mais moderno, atualizavel e de fácil manutenção. 
+Aqui tambem planejam os testes de integração.
+
+Passo 4: Desenvolvimento + Testes unitários
+Após tudo definido inicia o desenvolvimento do sistema.
+No cenário do projeto AP, cada funcionalidade desenvolvida deve passar por testes unitários, garantindo que pequenas partes do sistema funcionem corretamente antes de avançar, garantindo que caso seja encontrado algum bug, seja rapida a resolução.
+
+Passo 5: Testes Finais
+Após o desenvolvimento, o sistema passa por testes em níveis:
+Teste de integração: valida comunicação entre "módulos"
+Teste de sistema: valida o sistema completo
+Teste de aceitação: valida com o cliente 
+No cenário do projeto AP, essa etapa garante que o sistema atenda às necessidades reais dos usuários e cliente, validando funcionalidades e a experiência do usuário antes da entrega final.
+
+
+Modelo de desenvolvimento de software indicado:
+Modelo híbrido (Scrum + práticas do Modelo em V)
+
+Vantagens:
+Os Modelos e em V permite ter organização e qualidade, sem perder flexibilidade.
+O Scrum garante entregas contínuas, alinhamento com o cliente e adaptação rápida às mudanças;
+Já o Modelo em V garante maior controle de qualidade, com definição de requisitos e validação de testes em cada etapa.
+Dessa forma pretendo reduz riscos, melhorar a comunicação com os usuários e aumentar a qualidade das entregas.
+
+Forma de aplicação da solução no contexto do projeto AP:
+No cenário do projeto AP, o Scrum pode ser aplicado na gestão do projeto com cerimônias como planning, daily, review e retrospectiva, garantindo alinhamento constante do time com o cliente e entregas continuas.
+Já as práticas do Modelo em V podem ser aplicadas na parte de qualidade, garantindo que cada etapa (requisitos, análise, design e desenvolvimento) tenha seus testes correspondentes, como testes unitários, de integração e aceitação.
+Além disso, ferramentas como Git para versionamento, Cypress/Selenium para testes automatizados, Jira/Zphyr/Confluence para gestão, repositorio de testes manuais e documentação podem ser utilizadas para dar suporte ao processo, garantindo rastreabilidade e qualidade contínua.
+Essa combinação permite evoluir o sistema de forma estruturada, com entregas frequentes e foco na qualidade, atendendo melhor às necessidades dos usuários.
